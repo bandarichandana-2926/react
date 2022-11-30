@@ -1,12 +1,20 @@
 import React from "react";
-import Chandu from "./Chandu";
+import Product1 from "./Product";
+import One from "./One"
+import State from "./State"
+
+
 
 function App(){
 
 
     return (
         <div>
-            Hello 
+     <Product1/> 
+     {/* <One/>
+     <State/> */}
+     
+            
         </div>
 
     )
