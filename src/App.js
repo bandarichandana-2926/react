@@ -3,7 +3,7 @@ import Product1 from "./Product";
 import One from "./One"
 import State from "./State"
 import Two from "./Two"
-
+import Cart from "./Cart"
 
 function App(){
 
@@ -14,7 +14,8 @@ function App(){
      {/* <One/>
      <State/> */}
      
-            <Two/>
+            {/* <Two/> */}
+            <Cart/>
         </div>
 
     )
