@@ -2,24 +2,34 @@ import React from 'react'
 
 class Two extends  React.Component{
     state= {
-        name:""
+        email:"",
+        password:""
+
     }
-    changeHandler =(x)=>{
-    
+    changeHandler =(event)=>{
+          this.setState({email:event.target.value})
+    }
+    passwordHandler=(event)=>{
+           this.setState({password:event.target.value})
+    }
+    submitHandler=(event)=>{
+        event.preventDefault()
+        // console.log(this.state)
+        
     }
     render(){
         return(
             <>
-            <fieldset>
+                <pre>{JSON.stringify(this.state)}</pre>
                 <legend>Sign in </legend>
-            <form>
+            <form onSubmit={this.submitHandler}>
                 <label>Email:</label>
-                <input type="email" placeholder='Enter your email'/><br/>
+                <input type="text" placeholder='Enter your email' onChange={this.changeHandler}/><br/>
                 <label>Password:</label>
-                <input type="password" placeholder='Enter your password'/><br/>
+                <input type="password" placeholder='Enter your password' onChange={this.passwordHandler}/><br/>
                 <input type="submit" value="submit" />
             </form>
-            </fieldset>
+            
             </>
         )
     }

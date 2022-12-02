@@ -33,8 +33,8 @@ class Cart extends React.Component{
                     <td>{this.state.Cart_Item_Name}</td>
                     <td><img src={this.state.Cart_Item_Img} alt="" height="100px" /></td>
                     <td>{this.state.Cart_Item_Price}</td>
-                    <td><i className='fa fa-minus-circle' onClick={this.minushandler}></i>{this.state.Cart_Item_Qty}<i className='fa fa-plus-circle' onClick={this.plushandler}></i></td>
-                    
+                    <td><i className='fa fa-minus-square' onClick={this.minushandler}></i>{this.state.Cart_Item_Qty}<i className='fa fa-plus-square' onClick={this.plushandler}></i></td>
+
                     <td>{this.state.Cart_Item_Qty * this.state.Cart_Item_Price}</td>
 
 

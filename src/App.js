@@ -14,8 +14,8 @@ function App(){
      {/* <One/>
      <State/> */}
      
-            {/* <Two/> */}
-            <Cart/>
+            <Two/>
+            {/* <Cart/> */}
         </div>
 
     )
