@@ -4,6 +4,7 @@ import One from "./One"
 import State from "./State"
 import Two from "./Two"
 import Cart from "./Cart"
+import Form from "./Form"
 
 function App(){
 
@@ -14,8 +15,9 @@ function App(){
      {/* <One/>
      <State/> */}
      
-            <Two/>
+            {/* <Two/> */}
             {/* <Cart/> */}
+            <Form/>
         </div>
 
     )
