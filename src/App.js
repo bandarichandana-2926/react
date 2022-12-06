@@ -5,7 +5,8 @@ import State from "./State"
 import Two from "./Two"
 import Cart from "./Cart"
 import Form from "./Form"
-import Registration from "./Registration";
+// import Registration from "./Registration";
+import Counter from "./Hooks"
 
 function App(){
 
@@ -19,7 +20,8 @@ function App(){
             {/* <Two/> */}
             {/* <Cart/> */}
             {/* <Form/> */}
-            <Registration/>
+            {/* <Registration/> */}
+            <Counter/>
             
         </div>
 
